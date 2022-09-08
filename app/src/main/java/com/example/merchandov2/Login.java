@@ -59,13 +59,13 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
                 break;
 
             case R.id.btn1:
-                Intent intent=new Intent(Login.this,MainActivity.class);
+                Intent intent=new Intent(Login.this,SignIn.class);
                 startActivity(intent);
                 break;
             case R.id.btn:
                 if (user.equals("uday") && pass.equals("Uday@177")){
                     Toast.makeText(this,"Welcome To Merchando "+user,Toast.LENGTH_SHORT).show();
-                    Intent int1=new Intent(Login.this,MainActivity.class);
+                    Intent int1=new Intent(Login.this,HomePage.class);
                     startActivity(int1);
                 }
                 else{

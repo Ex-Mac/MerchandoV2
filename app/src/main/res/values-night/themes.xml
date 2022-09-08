@@ -2,23 +2,44 @@
     <!-- Base application theme. -->
     <style name="Theme.MerchandoV2" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimary">@color/Yellow</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/darkPurple</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondary">@color/black</item>
         <item name="colorSecondaryVariant">@color/teal_200</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">@color/darkPurple</item>
+<!--        Action bar-->
+        <item name="actionBarStyle">@style/AppTheme.ActionBar</item>
         <!-- Customize your theme here. -->
     </style>
+<!--Action bar implementation-->
+    <style name="AppTheme.ActionBar" parent="Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="android:titleTextStyle">@style/AppTheme.ActionBar.TitleText</item>
+        <item name="titleTextStyle">@style/AppTheme.ActionBar.TitleText</item>
+        <item name="background">@color/Yellow</item>
+        <item name="android:height">150dp</item>
+        <item name="height">60dp</item>
+    </style>
+
+    <style name="AppTheme.ActionBar.TitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+    <item name="android:textSize">25dp</item>
+    <item name="android:textColor">@color/black</item>
+
+    </style>
+
 
     <!--    splash Screen Theme-->
     <style name="SplashTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimaryDark">@color/darkPurple</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/darkPurple</item>
         <item name="android:windowBackground">@drawable/splash_bg</item>
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowTranslucentNavigation">true</item>
     </style>
+
+
 </resources>
